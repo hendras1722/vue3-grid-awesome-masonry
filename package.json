@@ -31,6 +31,10 @@
     "vite": "^4.4.5",
     "vue-tsc": "^1.8.5"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hendras1722/vue3-grid-awesome-masonry.git"
+  },
   "keywords": [
     "Grid",
     "layout",
