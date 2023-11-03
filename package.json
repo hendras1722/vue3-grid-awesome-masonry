@@ -1,0 +1,39 @@
+{
+  "name": "vue3-grid-awesome-masonry",
+  "private": false,
+  "version": "1.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue3-grid-awesome-masonry.umd.cjs",
+  "module": "./dist/vue3-grid-awesome-masonry.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-grid-awesome-masonry.js",
+      "require": "./dist/vue3-grid-awesome-masonry.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  },
+  "keywords": [
+    "Grid",
+    "layout",
+    "Masonry"
+  ]
+}
