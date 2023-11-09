@@ -4,7 +4,7 @@
 
 ```code
 <template>
-  <Container :itemData="itemData" :row="rows">
+  <Container :itemData="itemData" :column="column">
     <template #body="{ item }">
       <div style="width: 100%; border-radius: 10px; border: 1px solid gray">
         <img
@@ -29,7 +29,7 @@
 import { ref } from 'vue'
 import Container from 'vue3-grid-awesome-masonry'
 
-const rows = ref(2)
+const column = ref(2)
 const itemData = ref([
   {
     id: 1,
@@ -227,7 +227,7 @@ const itemData = ref([
 | Props      | Description   | type   |
 | :--------- | :------------ | :----- |
 | `itemData` | used for data | Array  |
-| `row`      | rows data     | Number |
+| `column`   | columns data  | Number |
 
 ## Screenshot
 

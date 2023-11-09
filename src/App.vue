@@ -9,7 +9,7 @@
     <option :value="7">7</option>
     <option :value="8">8</option>
   </select>
-  <Container :itemData="itemData" :row="rows">
+  <Container :itemData="itemData" :column="column">
     <template #body="{ item }">
       <div style="width: 100%; border-radius: 10px; border: 1px solid gray">
         <img
@@ -34,7 +34,7 @@
 import { ref } from 'vue'
 import Container from '../lib/components/Container.vue'
 
-const rows = ref(2)
+const column = ref(3)
 const itemData = ref([
   {
     id: 1,

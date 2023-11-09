@@ -24,14 +24,14 @@ const props = defineProps({
     type: Array,
     default: () => [],
   },
-  row: {
+  column: {
     type: Number,
     default: 2,
   },
 })
-const result = ref(divideArray(props.itemData, props.row))
+const result = ref(divideArray(props.itemData, props.column))
 watch(
-  () => props.row,
+  () => props.column,
   (newValue) => {
     result.value = divideArray(props.itemData, newValue)
   }
